@@ -1,1 +1,66 @@
 
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>عيد ميلاد فاطمة 🎂</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial;background:linear-gradient(180deg,#fff0f6,#ffc2d9,#ff8fae);text-align:center;color:#4d0018;overflow-x:hidden}
+.top{background:linear-gradient(135deg,#e8e8e8,#ff5fa2 35%,#d6002e 90%);color:white;padding:38px 16px 30px;border-radius:0 0 45px 45px;box-shadow:0 15px 35px rgba(214,0,46,.35);border-bottom:4px solid #fff}
+.top h1{font-size:36px;margin:8px 0;text-shadow:0 3px 12px rgba(0,0,0,.35)}
+.top p{font-size:20px;line-height:1.9;font-weight:bold}
+.badge{background:white;color:#d6002e;padding:7px 18px;border-radius:50px;display:inline-block;font-weight:bold}
+.card{background:rgba(255,255,255,.96);margin:16px;padding:20px;border-radius:28px;box-shadow:0 12px 30px rgba(0,0,0,.15);border:2px solid #ffdde9}
+.card h2{color:#d6002e;font-size:25px}
+img{width:100%;border-radius:22px;margin:13px 0;border:3px solid #ffc2d9;box-shadow:0 8px 20px rgba(0,0,0,.15)}
+button{background:linear-gradient(90deg,#ff2e88,#d6002e);color:white;border:none;padding:16px 32px;font-size:22px;border-radius:50px;box-shadow:0 8px 20px rgba(214,0,46,.4);cursor:pointer}
+audio{width:92%;margin-top:14px}
+.msg{font-size:20px;line-height:2}
+.fall{position:fixed;top:-50px;animation:fall linear infinite;z-index:999;pointer-events:none;filter:drop-shadow(0 3px 5px rgba(0,0,0,.2))}
+@keyframes fall{to{transform:translateY(115vh) rotate(360deg)}}
+.spark{font-size:28px;animation:pulse 1.2s infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.25)}}
+</style>
+</head>
+<body>
+
+<div class="top">
+<div class="spark">✨ 🎂 ✨</div>
+<div class="badge">🎉 اليوم يوم مميز 🎉</div>
+<h1>كل سنة وانتي طيبة يا فاطمة</h1>
+<p>يارب تكون سنة كلها فرح ونجاح<br>وتحققي كل اللي بتتمنيه<br>وتفضلي دايما مبسوطة ومتفوقة<br>وضحكتك منورة دايما</p>
+<button onclick="document.getElementById('music').play()">دوسي هنا عشان الأغنية تشتغل 🎵</button><br>
+<audio id="music" controls loop><source src="song.mp3" type="audio/mpeg"></audio>
+<p style="font-size:15px;opacity:.9">دوسي على الزرار والأغنية هتشتغل على طول</p>
+</div>
+
+<div class="card">
+<h2>📸 صور حلوة 💖</h2>
+<img src="1.jpg"><img src="2.jpg"><img src="3.jpg"><img src="4.jpg"><img src="5.jpg"><img src="6.jpg"><img src="7.jpg"><img src="8.jpg"><img src="9.jpg"><img src="10.png">
+</div>
+
+<div class="card">
+<h2>🎁 رسالة ليكي 🌹</h2>
+<p class="msg">اتمنى ليكي سنة كلها فرح ونجاح<br>وتفضلي دايما ضحكتك منورة<br>كل سنة وانتي طيبة يا فاطمة<br>🎂 ✨ 🎈</p>
+<p style="font-size:22px"><b>- محمد</b></p>
+</div>
+
+<div style="padding:15px;color:#d6002e;font-weight:bold">Made with ❤️ for Fatma's Birthday</div>
+
+<script>
+let emojis=['❤️','🌸','🌹','💖','✨','🎀','💐','🌷','💗'];
+for(let i=0;i<45;i++){
+let s=document.createElement('div');
+s.className='fall';
+s.innerHTML=emojis[Math.floor(Math.random()*emojis.length)];
+s.style.left=Math.random()*100+'vw';
+s.style.fontSize=(16+Math.random()*24)+'px';
+s.style.animationDuration=(3+Math.random()*4.5)+'s';
+s.style.animationDelay=(Math.random()*5)+'s';
+document.body.appendChild(s);
+}
+</script>
+</body>
+</html>
