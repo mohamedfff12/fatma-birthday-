@@ -2,32 +2,44 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>كل سنة وانتي طيبة يا فطومتي</title>
 <style>
-  *{box-sizing:border-box}
-  body{margin:0;font-family:system-ui; background:#fff0f5; overflow-x:hidden; text-align:center}
-  .lock{ min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:20px; }
-  .lock h1{font-size:28px}
-  .lock input{ padding:14px; font-size:20px; border-radius:12px; border:2px solid #ff69b4; text-align:center; width:260px; }
-  .lock button{ margin-top:15px; padding:13px 35px; font-size:19px; border:none; border-radius:30px; background:#ff1493; color:#fff; }
-  .content{display:none; padding:20px 18px 60px; max-width:650px; margin:auto}
-  .content h1{color:#d63384; font-size:30px; line-height:1.4}
-  .content p{font-size:20px; line-height:1.9; color:#333; white-space:pre-line}
-  #error{color:red; display:none; margin-top:10px}
+body{margin:0;font-family:system-ui;background:#fff0f5;text-align:center;overflow-x:hidden}
+.lock{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px}
+.lock input{padding:14px;font-size:20px;border-radius:12px;border:2px solid #ff69b4;text-align:center;width:260px}
+.lock button{margin-top:15px;padding:13px 35px;font-size:19px;border:none;border-radius:30px;background:#ff1493;color:#fff}
+.content{display:none;padding:20px 18px 60px;max-width:650px;margin:auto}
+.content h1{color:#d63384;font-size:30px}
+.content p{font-size:20px;line-height:1.9;color:#333;white-space:pre-line}
 </style>
 </head>
 <body>
-
 <div class="lock" id="lock">
-  <div style="font-size:60px">🔒💖</div>
-  <h1>اكتبي الباسورد يا فطومتي</h1>
-  <input type="password" id="pass" placeholder="الباسورد" inputmode="numeric">
-  <button onclick="check()">دخول 💌</button>
-  <p id="error">الباسورد غلط يا فطومتي، حاولي تاني 🥺</p>
-</div>
-
-<div class="content" id="content">
-  <div style="font-size:32px">👑🍯💌💖</div>
-  <h1>كل سنة وانتي طيبة يا فطومتي 🎂</h1>
-  <p>كل سنه وانتي طيبه ي فطومتي انا عارف انك زعلانه مني بس عيد ميلادك ده عندي اهم يوم فالسنه ،ع ده اليوم اللي الدنيا جابتلي فيه احلي هديه في حياتي والله،انا اسف ي فاطمه علي اللي انا عملتوا ده واسف علي الشك اللي خليتك تشكيله فيا وعلي كل حاجه انا السبب فيهههها انا اسف والله من كل قلبي حقك عليا يبنوتي كسرت ثقتك فيا انا مليش غيرك والله مش مستعد اخسرك كل حاجه هتنحل وانا جمبك والله كنت حابب قلت كل سنه وانتي جمبي ومعايا كل سنه وانتي احلا واجمل واحده في حياتي كلها بحبگك اووووووي ي فطومتي والله كل سنه وانتي منوره حياتي كل سنه وانتي اغلا حاجه في حياتي كل سنه وانتي طي
+<div style="font-size:60px">🔒💖</div>
+<h1>اكتبي الباسورد يا فطومتي</h1>
+<input type="password" id="pass" placeholder="الباسورد" inputmode="numeric">
+<button onclick="check()">دخول 💌</button>
+<p id="error" style="color:red;display:none">الباسورد غلط يا فطومتي 🥺</p>
+</div><div class="content" id="content">
+<div style="font-size:32px">👑🍯💌💖</div>
+<h1>كل سنة وانتي طيبة يا فطومتي 🎂</h1>
+<p>كل سنه وانتي طيبه ي فطومتي انا عارف انك زعلانه مني بس عيد ميلادك ده عندي اهم يوم فالسنه ،ع ده اليوم اللي الدنيا جابتلي فيه احلي هديه في حياتي والله،انا اسف ي فاطمه علي اللي انا عملتوا ده واسف علي الشك اللي خليتك تشكيله فيا وعلي كل حاجه انا السبب فيهههها انا اسف والله من كل قلبي حقك عليا يبنوتي كسرت ثقتك فيا انا مليش غيرك والله مش مستعد اخسرك كل حاجه هتنحل وانا جمبك والله كنت حابب قلت كل سنه وانتي جمبي ومعايا كل سنه وانتي احلا واجمل واحده في حياتي كلها بحبگك اووووووي ي فطومتي والله كل سنه وانتي منوره حياتي كل سنه وانتي اغلا حاجه في حياتي كل سنه وانتي طيبه يبنوتي وعيد ميلاد سعيد عليكي مكنش حابب يحصل كل ده فالفتره دي بس متشغليش بالك بكل ده كل حاجه هتتحل اطمنيي ي فاطمه ومش عايزك تفكري في حاجه ينور عيني وانبسطي ومتخفيش يحبيبتي من حاجه ولا تقلقييي كل سنه وانتي حته من قلبييي لا انتي قلبي نفسوا اصلا🫶🏻❣️💕💗🫂👑🍯💌💖💝💗💓💞💕💕❣️🫂🫂🌍🌍🌍🌍🌍🌍🌍🌍🌍</p>
+<div style="font-size:40px">🎂🎉🎈💖</div>
+</div><audio id="song" loop preload="auto">
+<source src="song.mp3" type="audio/mpeg">
+</audio>
+<script>
+function check(){
+var v=document.getElementById('pass').value.trim();
+if(v==='25112010'){
+document.getElementById('lock').style.display='none';
+document.getElementById('content').style.display='block';
+document.getElementById('song').play().catch(()=>{});
+}else{
+document.getElementById('error').style.display='block';
+}
+}
+</script>
+</body>
+</html>
